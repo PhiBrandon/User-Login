@@ -1,0 +1,9 @@
+#login-container{
+	max-width:800px;
+	margin-top:400px;
+}
+
+#login-row{
+	border-radius:10px;
+	padding-bottom:20px;
+}

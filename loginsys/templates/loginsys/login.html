@@ -1,0 +1,25 @@
+{% extends 'loginsys/header.html' %}
+{% block content %}
+
+		<h4>{{error}}</h4>
+		<h4>{{success}}</h4>
+		<form method="POST" action="#">
+			{% csrf_token %}
+			<div class="input-field col s12 m12 l12">
+				{{login.username}}
+				<label class="white-text" for="username">Username</label>
+			</div>
+
+			<div class="input-field col s12 m12 l12">
+				{{login.password}}
+				<label class="white-text" for="password">Password</label>
+			</div>
+			<button class="btn waves-effect blue white-text" type="Submit">Submit</button>
+
+		</form>
+		<h3>No account? <a href="/register/">Register</a> here</h3>
+
+
+
+
+{% endblock %}
